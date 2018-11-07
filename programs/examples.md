@@ -11,3 +11,4 @@ plt.plot(t,t,t,t+2,t,t**2)
 
 ```
 结果：
+<img height="300" align="center" src="https://github.com/yanmengk/Python_NJU/blob/master/resource/Figure_1.png" alt="">

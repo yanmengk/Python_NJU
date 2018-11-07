@@ -10,10 +10,11 @@ import matplotlib.pyplot as plt
 t=np.arange(0.,4.,0.1)
 plt.plot(t,t,t,t+2,t,t**2)
 ```
+
 用plot函数一次画三条线：
-第一条 x1=t,y1=t
-第二条 x2=t,y2=t+2
-第三条 x3=t,y3=t**2
+- 第一条 x1=t,y1=t
+- 第二条 x2=t,y2=t+2
+- 第三条 x3=t,y3=t**2
 
 结果：
 

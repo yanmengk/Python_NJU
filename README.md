@@ -176,7 +176,7 @@ math.radians() #将角度转为弧度
 >>> random.shuffle(list) #随机打乱列表
 ```
 ### Python中datetime模块中的常用函数
-```python3
+```python
 >>> import datetime
 
 >>> from datetime import date

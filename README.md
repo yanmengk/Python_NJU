@@ -10,11 +10,11 @@ Python中的**eval()函数**：将字符串str当成有效的表达式来求值�
 - 三引号包括下的字符串也可以跨行书写
 
 Python可以一行多语句书写，此时用**;**隔开，如下
-```
+```python
 x = 'Today' ; y = 'is' ; z = 'Thursday' ; print(x, y, z)
 ```
 Python中通过以下语句可以得到关键字：
-```
+```python
 import keyword
 print(keyword.kwlist)
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
@@ -28,7 +28,7 @@ Python支持多重赋值：
 ### Python的复数型
 Python的复数型的虚数部分必须有j
 求虚部、实部、共轭如下：
-```
+```python
 x = 2.4+5.6j
 x.imag
 x.real
@@ -44,13 +44,13 @@ id() 函数用于获取对象的内存地址。如果两个变量a,b通过id()�
 
 ### Python中的函数
 Python中的内建函数：
-```
+```python
 dir(__builtins__)
 ['ArithmeticError', ...... , '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
 
 ```
 数值型内建函数：
-```
+```python
 abs(): 求绝对值
 
 bool(): 求布尔值
@@ -120,7 +120,7 @@ math.radians() #将角度转为弧度
 
 ## 2、Python面面观
 ### 列表解析式与生成器表达式
-```
+```python
 >>> [i+1 for i in range(10) if i%2==0]
 
 [1, 3, 5, 7, 9]
@@ -176,7 +176,7 @@ math.radians() #将角度转为弧度
 >>> random.shuffle(list) #随机打乱列表
 ```
 ### Python中datetime模块中的常用函数
-```python
+```python3
 >>> import datetime
 
 >>> from datetime import date
@@ -229,7 +229,7 @@ Wed, Nov 07 2018 20:33
 更多datetime模块相关的信息，参见(http://www.runoob.com/python3/python3-date-time.html)
 ## 3、数据的获取与表示
 ### Python中的format函数格式化字符串
-```
+```python
 >>> print('There are %d punctuation marks. ' % (2))
 
 There are 2 punctuation marks. 

@@ -226,6 +226,21 @@ Wed, Nov 07 2018 20:33
 2018-02-03 23:29:00
 
 ```
+#### strftime vs strptime
+strftime:全称 string format time,用字符串的形式来格式化时间，重点在format，格式化，使之以一种可读的字符串形式返回。
+```python
+from datetime import datetime
+datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+'2018 11-14 19:50:52'
+```
+strptime:全称 string parse time，将字符串解析为时间，重点在parse。
+```python
+from datetime import datetime
+datetime.strptime('2018-11-14 19:50:00','%Y-%m-%d %H:%M:%S')
+datetime.datetime(2018, 11, 14, 19, 50)
+```
+
+
 更多datetime模块相关的信息，参见(http://www.runoob.com/python3/python3-date-time.html)
 ## 3、数据的获取与表示
 ### Python中的format函数格式化字符串
